@@ -1,0 +1,244 @@
+== Changelog ==
+
+= 3.2.5 =
+* Fixed order status for paid payment
+
+= 3.2.4 =
+* Fixed inventory stock issue
+
+= 3.2.3 =
+* Fixed Zinia Shipping validation issue
+
+= 3.2.0 =
+* Implemented Api v3 
+* Implemented Company search 
+
+= 3.1.0 =
+* Removed user creation by the Finance Express Widget functionality
+* Updated plugin information in readme.txt file
+* Fixed not correctly including JS
+* Fixed translations issue
+* Improved user data validation
+* Fixed wrong initial order status for Ivy payments
+* Code style changes based on recommendations from the WordPress team
+
+= 3.0.0 =
+* Implemented High-Performance Order Storage (HPOS) support
+* Improved the pending payment page
+* Improved payment action system
+* Improved the incoming notification handling
+* Refunds: Use cancel transaction if possible
+* Removed support of old versions of WooCommerce
+* Removed v1 api code
+* Multiple code improvements and bugfixes
+
+= 2.5.0 =
+* Fixed logging
+
+= 2.4.3 =
+* Added Compatibility with Weglot Translate plugin
+
+= 2.4.1 =
+* Fix VatRate Calculation in Checkout
+
+= 2.4.0 =
+* Idempotent header as unique identifier for payment actions
+* Apple, Google Pay compatibility issue
+* Express Widget: Problem with html tags in product name
+* Remove PHP Sessions
+* Apply WP Coding Standards
+* Fix shipping_address_equality issue
+* Add locale to force redirect
+* Code refactoring
+
+= 2.3.0 =
+* Fix log diagnostic token authorization
+
+= 2.2.5 =
+* Finance Express Widget fixes
+
+= 2.2.4 =
+* Extra logs for quotecallback
+
+= 2.2.0 =
+* implemented Quote callback url for express Ivy widget
+* Fixed wrong shipping amount while updating the order status
+
+= 2.1.4 =
+* Added region field for payment processing
+
+= 2.1.2 =
+* Extended notification handling
+
+= 2.1.1 =
+* Express widget fixes
+
+= 2.1.0 =
+* Added express widget
+
+= 2.0.0 =
+* Send logs via APM SDK to our Kibana from merchants plugins for diagnostics
+
+= 1.31.2 =
+* Fixed PHP Warnings
+
+= 1.31.1 =
+* Don't send locale for redirect methods
+
+= 1.31.0 =
+* Improved plugin registration functinality
+
+= 1.30.2 =
+* Fix amount and tax issues on shipping goods
+
+= 1.30.1 =
+* Add session fix for woocommerce version >= 7.1
+
+= 1.30.0 =
+* Add configurable option for /api/v2/payment endpoint
+
+= 1.29.0 =
+* fixed payment methods variants issue
+* added "allow-popups-to-escape-sandbox" sandbox attribute to iframe
+
+= 1.28.0 =
+* applied shipping details and payment items for shipping goods request
+
+= 1.27.0 =
+* implemented address equality for hidden methods
+
+= 1.26.1 =
+* implemented openbank cancel
+
+= 1.26.0 =
+* fixed marketplace issues
+
+= 1.25.1 =
+* updated compatibility version tags
+
+= 1.25.0 =
+* added shipping address to create payment request and processed hidden options
+* added transaction ID to field transaction_id
+* processed requests for invalid tokens (regenerated token)
+* implemented payment_items in refund
+
+= 1.24.0 =
+* Fixed error message upon synchronization
+* PHP 8 compatibility
+* Wordpress 5.8 compatibility
+
+= 1.23.0 =
+* Improved expired shop session handling in checkout callbacks
+
+= 1.22.0 =
+* implemented callback controllers for Finance Express widget
+
+= 1.20.0 =
+* Added uninstall hook
+* Made valid product sku in cart
+* Fixed issue during enqueuing javascripts
+* Improved sku in cproducts and inventory synchronization
+
+= 1.19.0 =
+* Implemented submit payment
+* Fixed plugin compatibility with minor versions of Wordpress and WooCommerce
+* Involved new verison of Payever\ExternalIntegration\Payments\Action\ActionDecider
+
+= 1.18.0 =
+* Made plugin compatible with DHL for WooCommerce
+
+= 1.17.1 =
+* Fixed refund issue
+
+= 1.17.0 =
+* Fixed outward product delete action and warnings in synchronization queue
+
+= 1.16.0 =
+* Implemented payment notifications signature
+
+= 1.15.3 =
+* Adjusted PAN ID block
+
+= 1.15.2 =
+* Fixed stock issue
+
+= 1.15.1 =
+* Minor fixes
+
+= 1.15.0 =
+* Implemented plugin registry and commands API, plugin embedded support info, products synchronization
+
+= 1.14.4 =
+* Minor fixes
+
+= 1.14.3 =
+* Fixed warning messages in emails
+
+= 1.14.1 =
+* Fixed notice messages
+
+= 1.14.0 =
+* Implemented payment option variants API
+
+= 1.13.2 =
+* Minor fixes
+
+= 1.13.0 =
+* Compatibility with Wordpress 5.3
+
+= 1.12.2 =
+* Bugfix: Fix for PHP Warning
+
+= 1.12.1 =
+* Bugfix: Call to a member function get_payment_method() on null
+
+= 1.12.0 =
+* Implemented SDK 2.0 usage.
+
+= 1.11.3 =
+* Removed token checks.
+
+= 1.11.1 =
+* Minor fixes.
+
+= 1.11.0 =
+* Refactoring.
+
+= 1.10.6 =
+* Minor fixes.
+
+= 1.10.5 =
+* Minor fixes.
+
+= 1.10.4 =
+* Added "allow-popups allow-modals" to iframe "sandbox" attribute.
+
+= 1.10.3 =
+* Resolved division by zero issue for 0-priced cart items.
+
+= 1.10.1 =
+* Added Stripe Direct Debit payment option.
+
+= 1.9.0 =
+* Fixed getting pan_id functionality.
+
+= 1.8.0 =
+* Implemented refund functionality.
+
+= 1.7.0 =
+* Payever SDK implementation.
+
+= 1.6.0 =
+* Added Santander Factoring payment option.
+
+= 1.5.0 =
+* Added Santander Invoice DE payment option.
+
+= 1.4.0 =
+* Added method PayEx Faktura.
+
+= 1.3.0 =
+* Added Santander Installment Sweden.
+
+= 1.2.2 =
+* Start version of plugin.

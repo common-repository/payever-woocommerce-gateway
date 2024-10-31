@@ -1,0 +1,13 @@
+{
+    "name": "payever/payever-woocommerce-gateway",
+    "require": {
+        "payever/core-sdk-php": "2.1.0",
+        "payever/plugins-sdk-php": "2.0.0",
+        "payever/payments-sdk-php": "2.4.0",
+        "payever/products-sdk-php": "2.0.0",
+        "payever/logger-sdk-php": "1.0.0"
+    },
+    "autoload": {
+        "classmap": ["includes/"]
+    }
+}

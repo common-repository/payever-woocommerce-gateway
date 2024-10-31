@@ -1,0 +1,1149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: payever - WooCommerce Gateway\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-15 13:09+0600\n"
+"PO-Revision-Date: 2024-06-15 13:13+0600\n"
+"Last-Translator: admin <admin@test.de>\n"
+"Language-Team: German\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_e(sprintf;__(sprintf;esc_html_e\n"
+"X-Textdomain-Support: yes\n"
+"X-Loco-Version: 2.3.1; wp-5.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:78
+msgid "Cancelled"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:81
+msgid "Qty to Cancel"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:84
+msgid "Captured"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:87
+msgid "Qty to Capture"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:147
+#: includes/admin/class-wc-payever-admin-order-edit.php:167
+msgid " ("
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:208
+#: includes/admin/class-wc-payever-admin-order-edit.php:209
+msgid "Capture"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:228
+#: includes/admin/class-wc-payever-admin-order-edit.php:229
+#: templates/admin/html-order-cancel.php:26
+#: templates/admin/html-order-capture.php:124
+msgid "Cancel"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:264
+msgid "Total Captured:"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-order-edit.php:276
+msgid "Total Cancelled:"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:134
+#: includes/admin/class-wc-payever-admin-settings.php:146
+msgid "Need help? Chat with us!"
+msgstr "Hilfe benötigt? Kontaktiere uns!"
+
+#: includes/admin/class-wc-payever-admin-settings.php:139
+msgid "Loading chat..."
+msgstr "Chat wird geladen…"
+
+#: includes/admin/class-wc-payever-admin-settings.php:147
+#, fuzzy
+#| msgid ""
+#| "Our free english and german speaking support is there for you from Monday "
+#| "to Friday, 8am-7pm. If you want to report a specific technical problem, "
+#| "please include your Wordpress, WooCommerce versions and payever plugin "
+#| "version in your message to us, and attach your plugin logs to it (can be "
+#| "downloaded by clicking “Download Logs” button on this page)."
+msgid ""
+"Our free english and german speaking support is there for you from Monday to "
+"Friday, 8am-7pm. If you want to report a specific technical problem, please "
+"include your WordPress, WooCommerce versions and payever plugin version in "
+"your message to us, and attach your plugin logs to it."
+msgstr ""
+"Unser kostenloser deutsch- und englisch-sprachiger Tech Support ist Montags "
+"bis Freitags zwischen 8 und 19 Uhr für dich da. Wenn du ein bestimmtes "
+"technisches Problem melden möchtest, erwähne in deiner Nachricht an uns "
+"bitte deine Wordpress, WooCommerce Versionen und die Version deines payever "
+"Plugins. Füge deiner Nachricht bitte auch die Plugin-Logs bei (die Log-Datei "
+"kannst du durch Klick auf den \"Download Logs\" Button auf dieser Seite "
+"herunterladen)."
+
+#: includes/admin/class-wc-payever-admin-settings.php:156
+#: includes/admin/class-wc-payever-admin-settings.php:223
+#: includes/admin/class-wc-payever-admin-settings.php:448
+#: includes/admin/class-wc-payever-admin-settings.php:449
+#: includes/admin/class-wc-payever-admin-settings.php:638
+msgid "Synchronization"
+msgstr "Synchronisierung"
+
+#: includes/admin/class-wc-payever-admin-settings.php:163
+msgid "Synchronize"
+msgstr "Synchronisieren"
+
+#: includes/admin/class-wc-payever-admin-settings.php:166
+msgid "You need to save settings before synchronization"
+msgstr "Sie müssen die Einstellungen vor dem Synchronisieren speichern"
+
+#: includes/admin/class-wc-payever-admin-settings.php:180
+#: includes/admin/class-wc-payever-admin-settings.php:591
+#, fuzzy
+#| msgid "Synchronization"
+msgid "Express widget synchronization"
+msgstr "Synchronisierung"
+
+#: includes/admin/class-wc-payever-admin-settings.php:187
+#: includes/admin/class-wc-payever-admin-settings.php:590
+msgid "Synchronize express widgets"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:190
+msgid ""
+"You have to have entered your payever api keys in the general settings of "
+"plugin"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:201
+#: includes/admin/class-wc-payever-admin-settings.php:207
+#: includes/admin/class-wc-payever-admin-settings.php:546
+#: includes/admin/class-wc-payever-admin-settings.php:547
+msgid "Download logs"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:230
+#, fuzzy
+#| msgid "Enable / Disable"
+msgid "Disable"
+msgstr "aktivieren / deaktivieren"
+
+#: includes/admin/class-wc-payever-admin-settings.php:230
+#: includes/admin/class-wc-payever-admin-settings.php:637
+#, fuzzy
+#| msgid "Enable %s"
+msgid "Enable"
+msgstr "aktivieren %s"
+
+#: includes/admin/class-wc-payever-admin-settings.php:236
+msgid "Export WooCommerce products"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:249
+msgid "Preparing exporting products..."
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:269
+msgid "Something went wrong"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:288
+msgid "Reset live API keys"
+msgstr "API Schlüssel zurücksetzen"
+
+#: includes/admin/class-wc-payever-admin-settings.php:289
+#: includes/admin/class-wc-payever-admin-settings.php:443
+msgid "Set up sandbox API Keys"
+msgstr "API Testschlüssel hinterlegen"
+
+#: includes/admin/class-wc-payever-admin-settings.php:346
+msgid "Default setting"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:347
+msgid "Products App"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:348
+msgid "Express Widget"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:394
+msgid "payever_plugin_description"
+msgstr ""
+"Von Finanzierung & Rechnungs-/Ratenkauf bis hin zu Kreditkartenzahlung, "
+"PayPal und andere Wallets, lokale Zahlarten sowie Sofort-Banküberweisung auf "
+"Basis von Open-Banking-Technologie – alles ohne zusätzliche Kosten bei "
+"einfachster Integration und schnellem Onboarding."
+
+#: includes/admin/class-wc-payever-admin-settings.php:404
+#: includes/class-wc-payever-gateway.php:252
+msgid "Enable / Disable"
+msgstr "aktivieren / deaktivieren"
+
+#: includes/admin/class-wc-payever-admin-settings.php:405
+msgid "Enable payever payment gateway"
+msgstr "Aktivieren Sie das payever Plugin"
+
+#: includes/admin/class-wc-payever-admin-settings.php:413
+#: includes/class-wc-payever-gateway.php:467
+msgid "Mode"
+msgstr "Modus"
+
+#: includes/admin/class-wc-payever-admin-settings.php:414
+msgid "Choose mode"
+msgstr "Modus auswählen"
+
+#: includes/admin/class-wc-payever-admin-settings.php:421
+msgid "Client ID *"
+msgstr "Client ID"
+
+#: includes/admin/class-wc-payever-admin-settings.php:422
+#, fuzzy
+#| msgid "Client ID Key."
+msgid "Client ID key"
+msgstr "Client ID Schlüssel"
+
+#: includes/admin/class-wc-payever-admin-settings.php:428
+msgid "Client Secret *"
+msgstr "Client Secret"
+
+#: includes/admin/class-wc-payever-admin-settings.php:429
+#, fuzzy
+#| msgid "Client Secret Key."
+msgid "Client secret key"
+msgstr "Client Secret Schlüssel"
+
+#: includes/admin/class-wc-payever-admin-settings.php:435
+msgid "Business UUID *"
+msgstr "Business UUID"
+
+#: includes/admin/class-wc-payever-admin-settings.php:436
+msgid "Business UUID"
+msgstr "Business UUID"
+
+#: includes/admin/class-wc-payever-admin-settings.php:454
+#: includes/admin/class-wc-payever-admin-settings.php:455
+msgid "Display only active payment methods in settings"
+msgstr "Nur Zahlarten anzeigen, die im payever Konto aktiviert sind"
+
+#: includes/admin/class-wc-payever-admin-settings.php:463
+#: includes/admin/class-wc-payever-admin-settings.php:464
+msgid "Display payment name"
+msgstr "Name der Zahlart sichtbar"
+
+#: includes/admin/class-wc-payever-admin-settings.php:472
+#: includes/admin/class-wc-payever-admin-settings.php:473
+msgid "Display payment icon"
+msgstr "Icon der Zahlart sichtbar"
+
+#: includes/admin/class-wc-payever-admin-settings.php:480
+msgid "Display payment description"
+msgstr "Beschreibung der Zahlart sichtbar"
+
+#: includes/admin/class-wc-payever-admin-settings.php:481
+msgid "Take description automatically"
+msgstr "Automatische Beschreibung wählen"
+
+#: includes/admin/class-wc-payever-admin-settings.php:488
+msgid "Default language in checkout"
+msgstr "Standardsprache beim Bezahlvorgang"
+
+#: includes/admin/class-wc-payever-admin-settings.php:489
+msgid "Choose default language in checkout"
+msgstr "Wählen Sie die Standardsprache beim Bezahlvorgang "
+
+#: includes/admin/class-wc-payever-admin-settings.php:505
+msgid "Shipped status"
+msgstr "Versandstatus"
+
+#: includes/admin/class-wc-payever-admin-settings.php:506
+msgid "Choose shipped status"
+msgstr "Wählen Sie den Versandstatus"
+
+#: includes/admin/class-wc-payever-admin-settings.php:514
+msgid "Redirect to payever"
+msgstr "Zu payever weiterleiten"
+
+#: includes/admin/class-wc-payever-admin-settings.php:515
+msgid ""
+"Check to get redirected to payever on a new page or leave blank to use an "
+"iframe."
+msgstr ""
+"Auswählen, um auf einer neuen Seite zu payever weitergeleitet zu werden. "
+"Leer lassen, um ein iframe zu benutzen."
+
+#: includes/admin/class-wc-payever-admin-settings.php:523
+msgid "Logging level"
+msgstr "Protokollierungstufe"
+
+#: includes/admin/class-wc-payever-admin-settings.php:535
+msgid "Send logs via APM"
+msgstr "Senden Sie Protokolle über APM"
+
+#: includes/admin/class-wc-payever-admin-settings.php:572
+#, fuzzy
+#| msgid "Enable / Disable Fee"
+msgid "Enable / Disable on product single page"
+msgstr "Gebühr aktivieren/deaktivieren"
+
+#: includes/admin/class-wc-payever-admin-settings.php:573
+msgid "Enable payever express widget on product single page"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:581
+#, fuzzy
+#| msgid "Enable / Disable"
+msgid "Enable / Disable on cart"
+msgstr "aktivieren / deaktivieren"
+
+#: includes/admin/class-wc-payever-admin-settings.php:582
+#, fuzzy
+#| msgid "Enable payever payment gateway"
+msgid "Enable payever express widget on cart"
+msgstr "Aktivieren Sie das payever Plugin"
+
+#: includes/admin/class-wc-payever-admin-settings.php:596
+msgid "Express widget type"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:597
+msgid "Please choose the express widget type"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:605
+msgid "Widget theme"
+msgstr "Widget-Thema"
+
+#: includes/admin/class-wc-payever-admin-settings.php:606
+msgid "Only for wallet payments"
+msgstr "nur für Wallet-Zahlungen"
+
+#: includes/admin/class-wc-payever-admin-settings.php:643
+msgid "Processing mode"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:644
+msgid ""
+"Using cron mode is highly recommended, but please make sure you have "
+"WooCommerce cron job installed. HTTP mode may decrease site performance "
+"dramatically on stock-related requests (mostly in checkout process)."
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:649
+msgid "Instantly on HTTP requests"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-settings.php:650
+msgid "Cron queue processing"
+msgstr ""
+
+#: includes/admin/class-wc-payever-admin-shipping.php:43
+msgid "payever Shipping Tracking"
+msgstr ""
+
+#: includes/api/class-wc-payever-api-refund-service.php:113
+#, php-format
+msgid "Transaction has been refunded successfully. Amount %s. Call ID: %s"
+msgstr ""
+
+#: includes/api/class-wc-payever-api-refund-service.php:173
+#, php-format
+msgid ""
+"Transaction has been refunded successfully:<br />%s<br />Amount: %s.<br /"
+">Call ID: %s"
+msgstr ""
+
+#: includes/api/class-wc-payever-api-refund-service.php:254
+#, php-format
+msgid "Transaction has been cancelled successfully. Amount %s. Call ID: %s"
+msgstr "Die Transkation wurde erfolgreich abgebrochen. Amount %s. Call ID: %s."
+
+#: includes/api/class-wc-payever-api-refund-service.php:314
+#, php-format
+msgid ""
+"Transaction has been cancelled successfully:<br />%s<br />Amount: %s.<br /"
+">Call ID: %s"
+msgstr ""
+
+#: includes/api/class-wc-payever-api-shipping-goods-service.php:142
+#, php-format
+msgid "Transaction has been shipped successfully. Amount: %s. Call ID: %s"
+msgstr ""
+
+#: includes/api/class-wc-payever-api-shipping-goods-service.php:229
+#, php-format
+msgid ""
+"Transaction has been shipped successfully:<br />%s<br />Amount: %s.<br /"
+">Call ID: %s"
+msgstr ""
+
+#: includes/class-wc-payever-fees.php:72
+#: includes/helpers/class-wc-payever-order-helper.php:100
+#: includes/payment/class-wc-payever-payment-service.php:153
+msgid "payever Fee"
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:152
+#, php-format
+msgid "Order hasn't been created: %s"
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:171
+#, fuzzy
+#| msgid "Payment was canceled"
+msgid "Payment has been cancelled."
+msgstr "Bezahlung wurde abgebrochen"
+
+#: includes/class-wc-payever-finance_express_api.php:194
+#, fuzzy
+#| msgid "Payment was canceled"
+msgid "Payment has been refused."
+msgstr "Bezahlung wurde abgebrochen"
+
+#: includes/class-wc-payever-finance_express_api.php:232
+#, php-format
+msgid "The order no.: %s has been successfully processed."
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:238
+msgid "The order has been processed successfully."
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:245
+#, php-format
+msgid "The order processing has been skipped: %s"
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:255
+#, php-format
+msgid "The order hasn't been processed: %s"
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:324
+msgid "The payment hasn't been successful."
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:365
+#, php-format
+msgid ""
+"The amount really paid (%1$s) is not equal to the product amount (%2$s)."
+msgstr ""
+
+#: includes/class-wc-payever-finance_express_api.php:500
+msgid "Invalid cart hash validation"
+msgstr ""
+
+#: includes/class-wc-payever-gateway.php:209
+msgid ""
+"Thank you, your order has been received. You will receive an update once "
+"your request has been processed."
+msgstr ""
+"Vielen Dank! Ihre Bestellung ist eingegangen. Sie erhalten eine "
+"Benachrichtigung sobald Ihre Bestellung weiterbearbeitet wird."
+
+#: includes/class-wc-payever-gateway.php:229
+msgid "An error occured while page processing. Please try later."
+msgstr ""
+
+#: includes/class-wc-payever-gateway.php:254
+#, php-format
+msgid "Enable %s"
+msgstr "aktivieren %s"
+
+#: includes/class-wc-payever-gateway.php:258
+msgid "Payment Title <sup>*</sup>"
+msgstr "Name der Zahlart <sup>*</sup>"
+
+#: includes/class-wc-payever-gateway.php:264
+msgid "Description <sup>*</sup>"
+msgstr "Beschreibung <sup>*</sup>"
+
+#: includes/class-wc-payever-gateway.php:270
+msgid "Enable / Disable Fee"
+msgstr "Gebühr aktivieren/deaktivieren"
+
+#: includes/class-wc-payever-gateway.php:272
+msgid "Merchant covers fees"
+msgstr "Händler trägt Gebühr"
+
+#: includes/class-wc-payever-gateway.php:279
+msgid "Fixed Fee"
+msgstr "Fixgebühr"
+
+#: includes/class-wc-payever-gateway.php:288
+msgid "Variable Fee"
+msgstr "Variable Gebühr"
+
+#: includes/class-wc-payever-gateway.php:297
+msgid "Minimum Order Total"
+msgstr "Minimaler Gesamtbestellwert"
+
+#: includes/class-wc-payever-gateway.php:304
+msgid "Maximum Order Total"
+msgstr "Maximaler Gesamtbestellwert"
+
+#: includes/class-wc-payever-gateway.php:314
+msgid "Is redirect method"
+msgstr ""
+
+#: includes/class-wc-payever-gateway.php:316
+#, php-format
+msgid "Apply submit payment for %s"
+msgstr ""
+
+#: includes/class-wc-payever-gateway.php:564
+msgid "Unable to determine refund entity or refund has already been processed."
+msgstr ""
+
+#: includes/class-wc-payever-gateway.php:588
+msgid "Sorry, but refund is not available now"
+msgstr ""
+
+#: includes/class-wc-payever-helper.php:195
+#, fuzzy
+#| msgid "-- Choose status --"
+msgid "--- Choose the widget ---"
+msgstr "— Status wählen —"
+
+#: includes/class-wc-payever-helper.php:203
+msgid ".description_offer"
+msgstr ""
+
+#: includes/class-wc-payever-helper.php:219
+msgid "Light"
+msgstr "Licht"
+
+#: includes/class-wc-payever-helper.php:220
+msgid "Dark"
+msgstr "Dunkel"
+
+#: includes/class-wc-payever-helper.php:552
+msgid "Live"
+msgstr "Live"
+
+#: includes/class-wc-payever-helper.php:553
+msgid "Sandbox"
+msgstr "Sandbox"
+
+#: includes/class-wc-payever-log-manager.php:110
+msgid "zip extension is required to perform this operation."
+msgstr ""
+
+#: includes/class-wc-payever-order-changes.php:135
+msgid "Captured items by order status changing"
+msgstr ""
+
+#: includes/class-wc-payever-order-changes.php:148
+#, php-format
+msgid "Captured %s by order status changing"
+msgstr ""
+
+#: includes/class-wc-payever-pending-status-page.php:124
+msgid "Thank you, your order has been received."
+msgstr "Vielen Dank, Ihre Bestellung ist eingegangen.\""
+
+#: includes/class-wc-payever-pending-status-page.php:141
+msgid ""
+"We will send the order once your loan application has been processed and we "
+"have received confirmation from Consumer Bank."
+msgstr ""
+"Wir versenden die Bestellung, sobald Ihr Kreditantrag bearbeitet wurde und "
+"wir eine Bestätigung von der Consumer Bank erhalten haben."
+
+#: includes/class-wc-payever-pending-status-page.php:142
+msgid ""
+"You will receive a response to your loan application via email or SMS and an "
+"order confirmation from us when your order is on its way."
+msgstr ""
+"Sie erhalten eine Antwort auf Ihren Kreditantrag per E-Mail oder SMS und "
+"eine Bestellbestätigung von uns, sobald Ihre Bestellung auf dem Weg ist."
+
+#: includes/class-wc-payever-synchronization.php:50
+msgid "Your settings have been synchronized with your payever account."
+msgstr "Die Einstellungen wurden mit Ihrem payever Konto synchronisiert."
+
+#: includes/class-wc-payever-synchronization.php:57
+#: includes/class-wc-payever-synchronization.php:81
+msgid ""
+"Could not synch - please check if the credentials you entered are correct "
+"and match the mode (live/sandbox)"
+msgstr ""
+"Synchronisierung fehlgeschlagen - bitte prüfen Sie, ob Ihre Daten stimmig "
+"sind und zum Modus passen (Live/Sandbox)"
+
+#: includes/class-wc-payever-synchronization.php:74
+msgid "The list of express widgets has been updated."
+msgstr ""
+
+#: includes/class-wc-payever-synchronization.php:136
+msgid ""
+"You set up sandbox API Keys and your settings have been synchronized with "
+"your payever account."
+msgstr ""
+"Sie haben die API Testschlüssel hinterlegt und die Einstellungen mit Ihrem "
+"payever Konto synchronisiert "
+
+#: includes/class-wc-payever-synchronization.php:191
+#: includes/class-wc-payever-synchronization.php:199
+msgid ""
+"You reseted live API keys and your settings have been synchronized with your "
+"payever account."
+msgstr ""
+"Sie haben die API Schlüssel zurückgesetzt und die Einstellungen mit Ihrem "
+"payever Konto synchronisiert"
+
+#: includes/class-wc-payever-synchronization.php:495
+#, fuzzy, php-format
+msgid ""
+"ATTENTION! Database migration failed for payever payments plugin. You need "
+"to <a href=\"%1$s\">synchronize</a> settings manually, otherwhise payever "
+"payment methods won't be shown in checkout. %2$s"
+msgstr ""
+"ACHTUNG! Die Datenbankmigration für das payever Plugin ist fehlgeschlagen. \n"
+"Sie müssen die Einstellungen manuell synchronisieren, ansonsten werden die \n"
+"Zahlungsarten von payever nicht angezeigt.\n"
+
+#: includes/class-wc-payever-synchronization.php:590
+#, fuzzy, php-format
+#| msgid "Synchronization"
+msgid "Synchronization has been %s"
+msgstr "Synchronisierung"
+
+#: includes/class-wc-payever-synchronization.php:618
+#, php-format
+msgid "%d products have been sent to payever"
+msgstr ""
+
+#: includes/class-wc-payever-synchronization.php:619
+#, php-format
+msgid "Exporting packet %1$d of %2$d ..."
+msgstr ""
+
+#: includes/class-wc-payever-synchronization.php:647
+msgid "Action processed."
+msgstr ""
+
+#: includes/helpers/class-wc-payever-order-helper.php:40
+msgid "Discount"
+msgstr ""
+
+#: includes/helpers/class-wc-payever-order-helper.php:144
+msgid "Fee"
+msgstr ""
+
+#: includes/notification/class-wc-payever-notification-handler.php:88
+#, fuzzy
+#| msgid "Order status is updated"
+msgid "Order status has been updated"
+msgstr "Bestellstatus aktualisiert"
+
+#: includes/notification/class-wc-payever-notification-handler.php:655
+#, php-format
+msgid "Shipped %s successfully."
+msgstr ""
+
+#: includes/notification/class-wc-payever-notification-handler.php:661
+#, php-format
+msgid "Refunded %s successfully."
+msgstr ""
+
+#: includes/notification/class-wc-payever-notification-handler.php:667
+#, php-format
+msgid "Cancelled %s successfully."
+msgstr ""
+
+#: includes/notification/class-wc-payever-notification-handler.php:685
+#, php-format
+msgid "Items: %s"
+msgstr ""
+
+#: includes/notification/class-wc-payever-notification-handler.php:692
+#, php-format
+msgid "Transaction ID: %1$s; Status: %2$s. Specific status: %3$s."
+msgstr ""
+
+#: includes/payment/class-wc-payever-callback-handler.php:138
+#, fuzzy
+#| msgid "Payment was canceled"
+msgid "Payment has been declined."
+msgstr "Bezahlung wurde abgebrochen"
+
+#: includes/payment/class-wc-payever-callback-handler.php:152
+#, fuzzy
+#| msgid "Payment was canceled"
+msgid "Payment has been declined"
+msgstr "Bezahlung wurde abgebrochen"
+
+#: includes/payment/class-wc-payever-callback-handler.php:172
+msgid "Order has been cancelled by customer."
+msgstr ""
+
+#: includes/payment/class-wc-payever-callback-handler.php:179
+msgid "Payment was canceled"
+msgstr "Bezahlung wurde abgebrochen"
+
+#: includes/payment/class-wc-payever-payment-handler.php:50
+msgid ""
+"Unfortunately, the application was not successful. Please choose another "
+"payment option to pay for your order."
+msgstr ""
+
+#: includes/payment/class-wc-payever-payment-handler.php:51
+msgid ""
+"The payment was not successful. Please try again or choose another payment "
+"option."
+msgstr ""
+
+#: includes/plugin/class-wc-payever-plugin-version.php:103
+#, php-format
+msgid ""
+"There is a new version of <b>payever - WooCommerce Gateway</b> available. <a "
+"href=\"%s\">Update now</a>, please!"
+msgstr ""
+
+#: includes/synchronization/class-wc-payever-outward-actions.php:178
+msgid "Handling woocommerce_update_product_stock_query event"
+msgstr ""
+
+#: includes/synchronization/class-wc-payever-outward-actions.php:285
+#, php-format
+msgid "Handling %s event"
+msgstr ""
+
+#: includes/synchronization/class-wc-payever-synchronization-cron.php:37
+msgid "Products synchronization has been disabled."
+msgstr ""
+
+#: includes/synchronization/class-wc-payever-synchronization-cron.php:45
+msgid "START: Processing payever sync action queue"
+msgstr ""
+
+#: includes/synchronization/class-wc-payever-synchronization-cron.php:63
+#, php-format
+msgid "Processing queue item failed: %s"
+msgstr ""
+
+#: includes/synchronization/class-wc-payever-synchronization-cron.php:71
+#, php-format
+msgid "FINISH: Processed %d queue records"
+msgstr ""
+
+#: includes/synchronization/class-wc-payever-synchronization-cron.php:88
+msgid ""
+"CAUTION: Queue item exceeded max processing tries count and going to be "
+"removed. This may lead to data loss and out of sync state."
+msgstr ""
+
+#: includes/synchronization/management/class-wc-payever-export-manager.php:56
+msgid "Synchronization must be enabled in order to export products"
+msgstr ""
+
+#: includes/synchronization/management/class-wc-payever-import-manager.php:53
+msgid "Provided security token is invalid."
+msgstr ""
+
+#: templates/admin/html-order-cancel.php:10
+#, fuzzy
+#| msgid "Payment was canceled"
+msgid "Amount already cancelled"
+msgstr "Bezahlung wurde abgebrochen"
+
+#: templates/admin/html-order-cancel.php:14
+msgid "Cancel amount"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:13
+msgid "Amount already captured"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:19
+#, fuzzy
+#| msgid "Minimum Order Total"
+msgid "Remaining order total"
+msgstr "Minimaler Gesamtbestellwert"
+
+#: templates/admin/html-order-capture.php:25
+msgid "Capture amount"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:34
+msgid "Comment (optional):"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:45
+msgid "Shipping Provider"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:51
+msgid "Custom Provider"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:70
+msgid "Shipping Provider Name"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:81
+msgid "Shipping Tracking Number"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:92
+msgid "Shipping Tracking Url"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:102
+msgid "Shipping Date"
+msgstr ""
+
+#: templates/admin/html-order-capture.php:110
+#: templates/admin/html-order-capture.php:111
+msgid "Y-m-d"
+msgstr ""
+
+#: templates/admin/metabox-shipping.php:15
+msgid "Click here to track your shipment"
+msgstr ""
+
+#: templates/admin/metabox-shipping.php:15
+msgid "Track"
+msgstr ""
+
+#: templates/admin/metabox-shipping.php:21
+#, fuzzy, php-format
+#| msgid "Shipped status"
+msgid "Shipped on %s"
+msgstr "Versandstatus"
+
+#: templates/checkout/pending-confirm-page.php:9
+msgid "Waiting for an update. It might take several minutes..."
+msgstr "Warten auf ein Update. Es kann einige Minuten dauern..."
+
+#: woocommerce-payever-gateway.php:278
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: woocommerce-payever-gateway.php:295
+#, fuzzy, php-format
+#| msgid ""
+#| "WooCommerce plugin must be active for the plugin <b>payever Payment "
+#| "Gateway for WooCommerce</b>.Kindly %s install & activate it %s "
+msgid ""
+"WooCommerce plugin must be active for the plugin <b>payever Payment Gateway "
+"for WooCommerce</b>. Kindly <a href=\"%1$s\" target=\"_new\">install & "
+"activate it</a>"
+msgstr ""
+"WooCommerce Plugin muss aktiv sein, damit das <b>payever Payment Gateway für "
+"WooCommerce</b> funktioniert. Bitte %s installiere & aktiviere es %s "
+
+#~ msgid "<p style=\"color: green;\">Shipped successfully</p>"
+#~ msgstr "<p style=\"color: green;\">Versand erfolgreich</p>"
+
+#~ msgid "Order has been shipped so status can not be updated"
+#~ msgstr ""
+#~ "Bestellung wurde versendet, daher kann der Status nicht mehr aktualisiert "
+#~ "werden"
+
+#~ msgid "payever transaction details"
+#~ msgstr "payever Transaktionsdetails"
+
+#~ msgid "None"
+#~ msgstr "Keiner"
+
+#~ msgid "Use store locale"
+#~ msgstr "Verwenden Sie das Store-Gebietsschema"
+
+#~ msgid "payever - WooCommerce Gateway"
+#~ msgstr "payever - WooCommerce Gateway"
+
+#~ msgid "Extends WooCommerce by Adding the payever Gateway."
+#~ msgstr "Erweitert Ihren WooCommerce Shop um das payever Plugin"
+
+#~ msgid "https://getpayever.com/"
+#~ msgstr "https://getpayever.com/"
+
+#~ msgid "apple_pay.name"
+#~ msgstr "Apple Pay"
+
+#~ msgid "apple_pay.description_offer"
+#~ msgstr "Apple Pay"
+
+#~ msgid "cash.name"
+#~ msgstr "Vorkasse"
+
+#~ msgid "cash.description_offer"
+#~ msgstr "Vorkasse"
+
+#~ msgid "google_pay.name"
+#~ msgstr "Google Pay"
+
+#~ msgid "google_pay.description_offer"
+#~ msgstr "Google Pay"
+
+#~ msgid "instant_payment.name"
+#~ msgstr "Santander Direktüberweisung"
+
+#~ msgid "instant_payment.description_offer"
+#~ msgstr "Santander Direktüberweisung"
+
+#~ msgid "ivy.name"
+#~ msgstr "Ivy"
+
+#~ msgid "paypal.name"
+#~ msgstr "PayPal"
+
+#~ msgid "paypal.description_offer"
+#~ msgstr "PayPal"
+
+#~ msgid "santander_factoring_de.name"
+#~ msgstr "Santander Ratenkauf"
+
+#~ msgid "santander_factoring_de.description_offer"
+#~ msgstr "Santander Ratenkauf"
+
+#~ msgid "santander_installment.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment.description_offer"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment_at.name"
+#~ msgstr "Santander Teilzahlung"
+
+#~ msgid "santander_installment_at.description_offer"
+#~ msgstr "Santander Teilzahlung Österreich"
+
+#~ msgid "santander_installment_dk.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment_dk.description_offer"
+#~ msgstr "Santander Ratenkredit Dänemark"
+
+#~ msgid "santander_installment_fi.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment_fi.description_offer"
+#~ msgstr "Santander Ratenkredit Finnland"
+
+#~ msgid "santander_installment_nl.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment_nl.description_offer"
+#~ msgstr "Santander Ratenkredit Niederlande"
+
+#~ msgid "santander_installment_no.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment_no.description_offer"
+#~ msgstr "Santander Ratenkredit Norwegen"
+
+#~ msgid "santander_installment_se.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment_se.description_offer"
+#~ msgstr "Santander Ratenkredit Schweden"
+
+#~ msgid "santander_installment_uk.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_installment_uk.description_offer"
+#~ msgstr "Santander Ratenkredit UK"
+
+#~ msgid "santander_invoice_de.name"
+#~ msgstr "Santander Rechnungskauf"
+
+#~ msgid "santander_invoice_de.description_offer"
+#~ msgstr "Santander Rechnungskauf"
+
+#~ msgid "santander_invoice_no.name"
+#~ msgstr "Santander Rechnungskauf"
+
+#~ msgid "santander_invoice_no.description_offer"
+#~ msgstr "Santander Rechnungskauf Norwegen"
+
+#~ msgid "santander_pos_factoring_de.name"
+#~ msgstr "Santander Ratenkauf"
+
+#~ msgid "santander_pos_factoring_de.description_offer"
+#~ msgstr "POS Santander Ratenkauf"
+
+#~ msgid "santander_pos_installment.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_pos_installment.description_offer"
+#~ msgstr "POS Santander Ratenkredit"
+
+#~ msgid "santander_pos_installment_at.name"
+#~ msgstr "Santander Teilzahlung"
+
+#~ msgid "santander_pos_installment_at.description_offer"
+#~ msgstr "POS Santander Teilzahlung Österreich"
+
+#~ msgid "santander_pos_installment_dk.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_pos_installment_dk.description_offer"
+#~ msgstr "POS Santander Ratenkredit Dänemark"
+
+#~ msgid "santander_pos_installment_no.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_pos_installment_no.description_offer"
+#~ msgstr "POS Santander Ratenkredit Norwegen"
+
+#~ msgid "santander_pos_installment_se.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_pos_installment_se.description_offer"
+#~ msgstr "POS Santander Ratenkredit Schweden"
+
+#~ msgid "santander_pos_installment_uk.name"
+#~ msgstr "Santander Ratenkredit"
+
+#~ msgid "santander_pos_installment_uk.description_offer"
+#~ msgstr "POS Santander Ratenkredit UK"
+
+#~ msgid "santander_pos_invoice_de.name"
+#~ msgstr "Santander Rechnungskauf"
+
+#~ msgid "santander_pos_invoice_de.description_offer"
+#~ msgstr "POS Santander Rechnungskauf"
+
+#~ msgid "santander_pos_invoice_no.name"
+#~ msgstr "Santander Rechnungskauf"
+
+#~ msgid "santander_pos_invoice_no.description_offer"
+#~ msgstr "POS Santander Rechnungskauf Norwegen"
+
+#~ msgid "sofort.name"
+#~ msgstr "Sofortüberweisung"
+
+#~ msgid "sofort.description_offer"
+#~ msgstr "Sofortüberweisung"
+
+#~ msgid "stripe.name"
+#~ msgstr "Kreditkarte"
+
+#~ msgid "stripe.description_offer"
+#~ msgstr "Stripe Kreditkarte"
+
+#~ msgid "stripe_directdebit.name"
+#~ msgstr "SEPA Lastschrift"
+
+#~ msgid "stripe_directdebit.description_offer"
+#~ msgstr "SEPA Lastschrift"
+
+#~ msgid "swedbank_creditcard.name"
+#~ msgstr "Swedbank Kartenzahlung"
+
+#~ msgid "swedbank_creditcard.description_offer"
+#~ msgstr "Swedbank Kartenzahlung"
+
+#~ msgid "swedbank_invoice.name"
+#~ msgstr "Swedbank Rechnungskauf"
+
+#~ msgid "swedbank_invoice.description_offer"
+#~ msgstr "Swedbank Rechnungskauf"
+
+#~ msgid "zinia_bnpl.name"
+#~ msgstr "Zinia Rechnungskauf"
+
+#~ msgid "zinia_bnpl.description_offer"
+#~ msgstr "Zinia Rechnungskauf Niederlande"
+
+#~ msgid "zinia_bnpl_de.name"
+#~ msgstr "Zinia Rechnungskauf"
+
+#~ msgid "zinia_bnpl_de.description_offer"
+#~ msgstr "Zinia Rechnungskauf"
+
+#~ msgid "zinia_installmen.name"
+#~ msgstr "Zinia Ratenkauf"
+
+#~ msgid "zinia_installmen.description_offer"
+#~ msgstr "Zinia Ratenkauf Niederlande"
+
+#~ msgid "zinia_installment_de.name"
+#~ msgstr "Zinia Ratenkauf"
+
+#~ msgid "zinia_installment_de.description_offer"
+#~ msgstr "Zinia Ratenkauf"
+
+#~ msgid "zinia_pos.name"
+#~ msgstr "Zinia Rechnungskauf"
+
+#~ msgid "zinia_pos.description_offer"
+#~ msgstr "POS Zinia Rechnungskauf Niederlande"
+
+#~ msgid "zinia_pos_de.name"
+#~ msgstr "Zinia Rechnungskauf"
+
+#~ msgid "zinia_pos_de.description_offer"
+#~ msgstr "POS Zinia Rechnungskauf"
+
+#~ msgid "zinia_slice_three.name"
+#~ msgstr "Zinia - Zahl in 3"
+
+#~ msgid "zinia_slice_three.description_offer"
+#~ msgstr "Zinia Slice In Three Niederlande"
+
+#~ msgid "zinia_slice_three_de.name"
+#~ msgstr "Zinia - Zahl in 3"
+
+#~ msgid "zinia_slice_three_de.description_offer"
+#~ msgstr "Zinia Slice In Three Deutschland"
+
+#~ msgid "dropdownCalculator"
+#~ msgstr "Calculator"
+
+#~ msgid "twoFieldsCalculator"
+#~ msgstr "Two Field Calculator"
+
+#~ msgid "button"
+#~ msgstr "Button"
+
+#~ msgid "text"
+#~ msgstr "Text"
+
+#~ msgid "payeverAdminMenuConfigSettingsWidgetThemeLight"
+#~ msgstr "Licht"
+
+#~ msgid "payeverAdminMenuConfigSettingsWidgetThemeDark"
+#~ msgstr "Dunkel"
+
+#~ msgid "payeverAdminMenuConfigSettingsWidgetThemeDescription"
+#~ msgstr "nur für Wallet-Zahlungen"
+
+#~ msgid "payeverAdminMenuConfigSettingsWidgetTheme"
+#~ msgstr "Widget-Thema"
+
+#~ msgid "payeverPendingHeader"
+#~ msgstr "Vielen Dank, Ihre Bestellung ist eingegangen."
+
+#~ msgid "payeverPendingProcessed"
+#~ msgstr ""
+#~ "Wir versenden die Bestellung, sobald Ihr Kreditantrag bearbeitet wurde "
+#~ "und wir eine Bestätigung von der Consumer Bank erhalten haben."
+
+#~ msgid "payeverPendingInformation"
+#~ msgstr ""
+#~ "Sie erhalten eine Antwort auf Ihren Kreditantrag per E-Mail oder SMS und "
+#~ "eine Bestellbestätigung von uns, sobald Ihre Bestellung auf dem Weg ist."
+
+#~ msgid "payeverPendingLoaderMsg"
+#~ msgstr "Warten auf ein Update. Es kann einige Minuten dauern..."
+
+#: includes/admin/class-wc-payever-admin-settings.php:511
+msgid "API version"
+msgstr "API-Version"

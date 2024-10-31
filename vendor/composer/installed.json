@@ -1,0 +1,369 @@
+{
+    "packages": [
+        {
+            "name": "payever/core-sdk-php",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/payeverworldwide/core-sdk-php.git",
+                "reference": "791e93f0e9ea050d62899be04221b1b5da0452ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/payeverworldwide/core-sdk-php/zipball/791e93f0e9ea050d62899be04221b1b5da0452ed",
+                "reference": "791e93f0e9ea050d62899be04221b1b5da0452ed",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "monolog/monolog": "^2.9",
+                "phpmd/phpmd": "^2.9",
+                "phpunit/phpunit": "^7.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-mcrypt": "If you want to use mcrypt at PseudoRandomStringGenerator",
+                "ext-openssl": "If you want to use openssl at PseudoRandomStringGenerator",
+                "ext-pdo": "If you want to use MySQLLock"
+            },
+            "time": "2024-07-16T06:23:33+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Siaryi",
+                    "email": "igor.siary@gmail.com",
+                    "role": "1.x and further development"
+                }
+            ],
+            "description": "Core PHP SDK for payever",
+            "homepage": "https://github.com/payever/core-sdk-php",
+            "keywords": [
+                "e-commerce",
+                "payever",
+                "payments"
+            ],
+            "support": {
+                "issues": "https://github.com/payeverworldwide/core-sdk-php/issues",
+                "source": "https://github.com/payeverworldwide/core-sdk-php/tree/2.1.0"
+            },
+            "install-path": "../payever/core-sdk-php"
+        },
+        {
+            "name": "payever/logger-sdk-php",
+            "version": "1.0.0",
+            "version_normalized": "1.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/payeverworldwide/logger-sdk-php.git",
+                "reference": "04ddf1576f9f5348447927ef39da1cb04e6466f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/payeverworldwide/logger-sdk-php/zipball/04ddf1576f9f5348447927ef39da1cb04e6466f5",
+                "reference": "04ddf1576f9f5348447927ef39da1cb04e6466f5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "payever/core-sdk-php": "^2.0",
+                "php": ">=5.4.0",
+                "psr/log": "^1.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "phpmd/phpmd": "^2.9",
+                "phpunit/phpunit": "^7.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2024-03-20T14:21:38+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Siaryi",
+                    "email": "igor.siary@gmail.com",
+                    "role": "1.x and further development"
+                }
+            ],
+            "description": "PHP SDK for payever payments",
+            "homepage": "https://github.com/payever/logger-sdk-php",
+            "keywords": [
+                "e-commerce",
+                "pay",
+                "payever",
+                "payments"
+            ],
+            "support": {
+                "issues": "https://github.com/payeverworldwide/logger-sdk-php/issues",
+                "source": "https://github.com/payeverworldwide/logger-sdk-php/tree/1.0.0"
+            },
+            "install-path": "../payever/logger-sdk-php"
+        },
+        {
+            "name": "payever/payments-sdk-php",
+            "version": "2.4.0",
+            "version_normalized": "2.4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/payeverworldwide/payments-sdk-php.git",
+                "reference": "16ecdb7df69648ba3a2b35d0f887fe6b462338c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/payeverworldwide/payments-sdk-php/zipball/16ecdb7df69648ba3a2b35d0f887fe6b462338c4",
+                "reference": "16ecdb7df69648ba3a2b35d0f887fe6b462338c4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "payever/core-sdk-php": "2.1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "behat/behat": "^3.4",
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "laminas/laminas-diactoros": "^2.5",
+                "laminas/laminas-httphandlerrunner": "^1.4",
+                "phpmd/phpmd": "^2.9",
+                "phpunit/phpunit": "^7.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2024-07-16T06:25:06+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Siaryi",
+                    "email": "igor.siary@gmail.com",
+                    "role": "1.x and further development"
+                }
+            ],
+            "description": "PHP SDK for payever payments",
+            "homepage": "https://github.com/payeverworldwide/payments-sdk-php",
+            "keywords": [
+                "e-commerce",
+                "pay",
+                "payever",
+                "payments"
+            ],
+            "support": {
+                "issues": "https://github.com/payeverworldwide/payments-sdk-php/issues",
+                "source": "https://github.com/payeverworldwide/payments-sdk-php/tree/2.4.0"
+            },
+            "install-path": "../payever/payments-sdk-php"
+        },
+        {
+            "name": "payever/plugins-sdk-php",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/payeverworldwide/plugins-sdk-php.git",
+                "reference": "36be67775e662383fc20c3af6c22bc042310214d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/payeverworldwide/plugins-sdk-php/zipball/36be67775e662383fc20c3af6c22bc042310214d",
+                "reference": "36be67775e662383fc20c3af6c22bc042310214d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "payever/core-sdk-php": "^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "laminas/laminas-diactoros": "^2.5",
+                "laminas/laminas-httphandlerrunner": "^1.4",
+                "phpmd/phpmd": "^2.9",
+                "phpunit/phpunit": "^7.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2024-03-20T13:37:32+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Siaryi",
+                    "email": "igor.siary@gmail.com",
+                    "role": "1.x and further development"
+                }
+            ],
+            "description": "PHP SDK for payever",
+            "homepage": "https://github.com/payeverworldwide/plugins-sdk-php",
+            "keywords": [
+                "e-commerce",
+                "payever",
+                "plugins"
+            ],
+            "support": {
+                "issues": "https://github.com/payeverworldwide/plugins-sdk-php/issues",
+                "source": "https://github.com/payeverworldwide/plugins-sdk-php/tree/2.0.0"
+            },
+            "install-path": "../payever/plugins-sdk-php"
+        },
+        {
+            "name": "payever/products-sdk-php",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/payeverworldwide/products-sdk-php.git",
+                "reference": "47a7a0d7990d0b74214a002b0d900fade01700ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/payeverworldwide/products-sdk-php/zipball/47a7a0d7990d0b74214a002b0d900fade01700ea",
+                "reference": "47a7a0d7990d0b74214a002b0d900fade01700ea",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "payever/core-sdk-php": "^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "laminas/laminas-diactoros": "^2.5",
+                "laminas/laminas-httphandlerrunner": "^1.4",
+                "phpmd/phpmd": "^2.9",
+                "phpunit/phpunit": "^7.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "time": "2024-03-20T13:35:45+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Siaryi",
+                    "email": "igor.siary@gmail.com",
+                    "role": "1.x and further development"
+                }
+            ],
+            "description": "PHP SDK for payever",
+            "homepage": "https://github.com/payever/sdk-php",
+            "keywords": [
+                "e-commerce",
+                "inventory",
+                "payever",
+                "products"
+            ],
+            "support": {
+                "issues": "https://github.com/payeverworldwide/products-sdk-php/issues",
+                "source": "https://github.com/payeverworldwide/products-sdk-php/tree/2.0.0"
+            },
+            "install-path": "../payever/products-sdk-php"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "version_normalized": "1.1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2021-05-03T11:20:27+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "install-path": "../psr/log"
+        }
+    ],
+    "dev": false,
+    "dev-package-names": []
+}

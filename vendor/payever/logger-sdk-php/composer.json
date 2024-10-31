@@ -1,0 +1,47 @@
+{
+   "authors" : [
+      {
+         "email" : "igor.siary@gmail.com",
+         "name" : "Igor Siaryi",
+         "role" : "1.x and further development"
+      }
+   ],
+   "autoload" : {
+      "classmap" : [
+         "lib"
+      ]
+   },
+   "autoload-dev" : {
+      "classmap" : [
+         "lib",
+         "tests"
+      ],
+      "psr-4" : {
+         "Payever\\Tests\\" : "tests/"
+      }
+   },
+   "description" : "PHP SDK for payever payments",
+   "homepage" : "https://github.com/payever/logger-sdk-php",
+   "keywords" : [
+      "payments",
+      "payever",
+      "pay",
+      "e-commerce"
+   ],
+   "license" : "MIT",
+   "minimum-stability" : "stable",
+   "name" : "payever/logger-sdk-php",
+   "require" : {
+      "ext-json" : "*",
+      "payever/core-sdk-php" : "^2.0",
+      "php" : ">=5.4.0",
+      "psr/log" : "^1.1"
+   },
+   "require-dev" : {
+      "friendsofphp/php-cs-fixer" : "^2.18",
+      "phpmd/phpmd" : "^2.9",
+      "phpunit/phpunit" : "^7.5",
+      "squizlabs/php_codesniffer" : "^3.5"
+   },
+   "type" : "library"
+}

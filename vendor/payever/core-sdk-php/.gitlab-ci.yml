@@ -1,0 +1,190 @@
+stages:
+  - test_build
+  - test
+  - release
+
+before_script:
+  - echo "machine gitlab.devpayever.com login $GITLAB_USER password $GITLAB_TOKEN" > ~/.netrc
+
+release_github:
+  stage: release
+  tags: [sf_test]
+  only:
+    - tags
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php7.3-cli:2.0.2
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  script:
+    - command -v git >/dev/null 2>&1 || { echo >&2 "git could not be found"; exit 1; }
+    - command -v perl >/dev/null 2>&1 || { echo >&2 "perl could not be found"; exit 1; }
+    - command -v json_pp >/dev/null 2>&1 || { echo >&2 "json_pp could not be found"; exit 1; }
+    - git config --global --add safe.directory /builds/plugins/sdk/core
+    - GITLAB_TAG=`git describe --tags`
+
+    - GITHUB_LOCAL_REPO_TMP=~/github_tmp
+    - GITHUB_LOCAL_REPO=~/github
+    - cd ~ && git clone $GITHUB_ORIGIN $GITHUB_LOCAL_REPO_TMP
+    - mkdir $GITHUB_LOCAL_REPO
+    - cp -R $GITHUB_LOCAL_REPO_TMP/.git $GITHUB_LOCAL_REPO/
+    - cd $GITHUB_LOCAL_REPO
+    - GITHUB_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
+
+    - echo "GitLab=$GITLAB_TAG <> GitHub=$GITHUB_TAG"
+
+    - \[ $GITLAB_TAG == $GITHUB_TAG \] && echo "Github repo is up to date, nothing to commit" && exit 0
+
+    # Prepare repo for publishing
+    - DIST=~/public
+    - cd $CI_PROJECT_DIR
+    - mkdir $DIST
+    - cp -Rf ./ $DIST
+    - cd $DIST
+    - rm -rf ./.git
+    - cp -Rf $GITHUB_LOCAL_REPO_TMP/.git ./
+    - cp -f ./ci/composer/7.3/composer.json ./composer.json
+    # Clean
+    - rm -Rf ./ci ./.gitlab-ci.yml./tests/Integration ./composer.lock ./phpcs.xml ./phpmd.xml
+    - mv ./LICENSE.md ./LICENSE
+    - perl -pe 'BEGIN{undef $/;} s|"repositories":[^\]]+\]||gs' composer.json > composer.tmp && rm composer.json && mv composer.tmp composer.json
+    - perl -pe 'BEGIN{undef $/;} s|,(.\s+})|\1}|gs' composer.json > composer.tmp && rm composer.json && mv composer.tmp composer.json
+    - perl -pe 'BEGIN{undef $/;} s|}}|}|gs' composer.json > composer.tmp && rm composer.json && mv composer.tmp composer.json
+    - cat composer.json | json_pp > composer.tmp && rm composer.json && mv composer.tmp composer.json
+
+    - cat composer.json
+
+    #- cp -Rf $DIST/* $GITHUB_LOCAL_REPO
+
+    # Create a new tag
+    #- cd $GITHUB_LOCAL_REPO
+    - git config user.email $GITHUB_PUBLISHER_EMAIL
+    - git config user.name $GITHUB_PUBLISHER_NAME
+    - git add -A
+    - git commit -m "Version $GITLAB_TAG autorelease"
+    - git tag $GITLAB_TAG
+    - git remote set-url origin ${GITHUB_ORIGIN/https:\/\//https:\/\/$GITHUB_USER:$GITHUB_TOKEN@}
+
+    # Do publish
+    - git push origin
+    - git push origin --tags
+
+test_build:
+  stage: test_build
+  tags: [sf_test]
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php7.3-cli:2.0.2
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  cache:
+    key: test_${CI_COMMIT_REF_SLUG}
+    paths:
+      - vendor/
+  only:
+    - triggers
+    - web
+  script:
+    - echo $0
+    - composer install --no-interaction --optimize-autoloader --no-ansi
+
+test_version:
+  stage: test
+  tags: [sf_test]
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php7.3-cli:2.0.2
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  only:
+    variables:
+      - $IN_STAGE_TYPE == "test"
+  allow_failure: true
+  script:
+    - git config --global --add safe.directory /builds/plugins/sdk/core
+    - GITLAB_TAG=$(git describe --tags `git rev-list --tags --max-count=1`)
+    - php tests/Version/test_version.php $GITLAB_TAG
+
+test_phpcs:
+  stage: test
+  tags: [sf_test]
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php7.3-cli:2.0.2
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  cache:
+    key: test_${CI_COMMIT_REF_SLUG}
+    paths:
+      - vendor/
+  only:
+    variables:
+    - $IN_STAGE_TYPE == "test"
+  allow_failure: true
+  script:
+    - composer install
+    - ./vendor/bin/phpcs --standard=./phpcs.xml lib/
+
+test_phpmd:
+  stage: test
+  tags: [sf_test]
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php7.3-cli:2.0.2
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  cache:
+    key: test_${CI_COMMIT_REF_SLUG}
+    paths:
+      - vendor/
+  only:
+    variables:
+    - $IN_STAGE_TYPE == "test"
+  allow_failure: true
+  script:
+    - composer install
+    - ./vendor/bin/phpmd lib/ text ./phpmd.xml
+
+.unit:base:
+  stage: test
+  tags: [sf_test]
+  only:
+    variables:
+      - $IN_STAGE_TYPE == "test"
+  script:
+    - php -v
+    - cp -f ./ci/composer/$PHP_VERSION/composer.json ./composer.json
+    - cp -f ./ci/composer/$PHP_VERSION/composer.lock ./composer.lock
+    - composer install --no-interaction --optimize-autoloader --no-ansi
+    - cp phpunit.xml.dist phpunit.xml
+    - if [ $PHP_VERSION = "5.6" ]; then sed -i "s|tests/Unit|tests/LegacyUnit|g" ./phpunit.xml; fi
+    - if [ $PHP_VERSION = "5.6" ]; then rm -rf tests/Unit; fi
+    - if [ $PHP_VERSION != "5.6" ]; then rm -rf tests/LegacyUnit; fi
+    - composer dump-autoload
+    - ./vendor/bin/phpunit -c ./phpunit.xml
+
+unit:php5.6:
+  extends: .unit:base
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php5.6-cli:2.0.0
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  cache:
+    key: test_unit_56_${CI_COMMIT_REF_SLUG}
+    paths:
+      - vendor/
+  variables:
+    PHP_VERSION: '5.6'
+
+unit:php7.3:
+  extends: .unit:base
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php7.3-cli:2.0.2
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  cache:
+    key: test_unit_73_${CI_COMMIT_REF_SLUG}
+    paths:
+      - vendor/
+  variables:
+    PHP_VERSION: '7.3'
+
+unit:php8.2:
+  extends: .unit:base
+  image:
+    name: payeverk8sregistry.azurecr.io/plugins/ci/php8.2-cli:2.0.0
+    entrypoint: [ "/bin/sh", "-c", "/bin/bash" ]
+  cache:
+    key: test_unit_82_${CI_COMMIT_REF_SLUG}
+    paths:
+      - vendor/
+  variables:
+    PHP_VERSION: '8.2'
